@@ -1,4 +1,4 @@
-pytho# 第10週 課題 模範解答
+# 第10週 課題 模範解答
 # main_report.py
 # Atsumi2025_airtemp_7days.csv から 2025-08-24 の 24点の温度データを読み込み、
 # 1行のレポートを出力するプログラム
@@ -62,7 +62,7 @@ if __name__ == "__main__":
 
     # CSV から TARGET_DATE の 24件の温度データを読み込む
     temps = []
-    with open(CSV_PATH, newline="", encoding="utf-8") as f:
+    with open(CSV_PATH, newline="", encoding="utf-8-sig") as f:
         reader = csv.DictReader(f)
         for row in reader:
             if row["Date"] == TARGET_DATE:
